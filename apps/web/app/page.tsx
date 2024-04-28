@@ -3,6 +3,7 @@ import { Card } from "@repo/ui/card";
 import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui/button";
+import { Signup } from "@repo/ui/Signup";
 
 function Gradient({
   conic,
@@ -136,6 +137,7 @@ export default function Page(): JSX.Element {
         {LINKS.map(({ title, href, description }) => (
           <Card className={styles.card} href={href} key={title} title={title}>
             {description}
+            <Signup />
           </Card>
         ))}
       </div>
